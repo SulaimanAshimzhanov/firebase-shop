@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.admin_layout {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.admin_layout aside {
+  width: 25%;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.admin_layout main {
+  width: 73%;
+}
+
+.css-13cymwt-control {
+  width: 100% !important;
+  padding: 8px 5px;
+  border-radius: 8px !important;
+  background: none !important;
+  border: 2px solid #eee !important;
+  color: white !important;
+  outline: 0;
+  font-size: 14px;
+}
+
+.css-t3ipsp-control {
+  width: 100% !important;
+  padding: 8px 5px;
+  border-radius: 8px !important;
+  background: none !important;
+  border: 2px solid #eee !important;
+  color: white !important;
+  outline: 0;
+  font-size: 14px;
+}
+
+.css-1dimb5e-singleValue {
+  color: white !important;
+}
+
+.css-b62m3t-container {
+  width: 545px !important;
 }

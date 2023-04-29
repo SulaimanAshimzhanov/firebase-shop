@@ -1,0 +1,66 @@
+
+
+.products_page {
+
+    &_filter {
+        .select {
+             select {
+                width: 400px;
+                padding: 18px 5px;
+                border-radius: 10px;
+                border: 0;
+                outline: 0;
+                cursor: pointer;
+                box-shadow: 0 0 5px white;
+             }
+        }
+
+        .tags {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+
+            button {
+                padding: 15px 20px;
+                border: 1px solid white;
+                background: none;
+                outline: 0;
+                color: white;
+                cursor: pointer;
+
+                &.activeTag {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        .hashTags {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+
+            button {
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: 1px solid white;
+                background: none;
+                outline: 0;
+                color: white;
+                cursor: pointer;
+
+                &.activeTag {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            p {
+                color: white; 
+            }
+        }
+    }
+}

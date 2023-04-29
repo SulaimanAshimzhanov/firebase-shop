@@ -1,0 +1,28 @@
+.register_page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+        color: white;
+    }
+
+    form {
+        width: 30%;
+
+        input {
+            width: 100%;
+            padding: 17px 5px;
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            background: none;
+            background-color: none;
+            border: 1px solid #eee;
+            color: white;
+        }
+
+        
+    }
+}

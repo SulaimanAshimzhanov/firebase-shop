@@ -1,0 +1,34 @@
+
+
+.slider_parent {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+
+    &_container {
+        height: 100%;
+
+        .slider_item {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            cursor: pointer;
+            transition: .5s;
+            opacity: 0;
+        }
+    
+        .activeSlider {
+            opacity: 1;
+        }
+    }
+
+    &_dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 30px;
+    }
+}

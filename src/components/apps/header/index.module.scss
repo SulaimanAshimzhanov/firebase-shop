@@ -1,0 +1,77 @@
+
+
+header {
+    margin-bottom: 80px;
+
+    .header_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        border-bottom: 1px solid grey;
+    
+        h1 {
+            a {
+                cursor: pointer;
+                color: white;
+                font-weight: 400;
+            }
+        }
+    
+        &_icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+    
+            &_inline {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+    
+                p {
+                    margin-top: 0;
+                    color:  white;
+        
+                    svg {
+                        font-size: 1.5rem;
+                        color: white;
+                    }
+                }
+            }
+    
+    
+        }
+    }
+    
+    .header_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    
+        ul {
+            display: flex;
+            gap: 30px;
+    
+            li {
+                a {
+                    font-size: 20px;
+                    color:  white;
+                    opacity: .7;
+    
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    
+        form {
+            width: 30%;
+            input {
+                padding: 15px 5px;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+
+.goog {
+    display:flex;
+    justify-content: center;
+
+    .google {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border: 0;
+        outline: 0;
+        border-radius: 15px;
+        background-color: rgb(73, 71, 71);
+        color: white;
+        width: 250px;
+        padding: 3px 15px;
+        box-shadow: 0 0 5px white;
+        cursor: pointer;
+    
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    
+        p {
+            font-size: 13px;
+        }
+    }
+}
