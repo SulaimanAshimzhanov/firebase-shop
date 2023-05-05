@@ -9,7 +9,7 @@ const Main: React.FunctionComponent<any> = () => {
   return (
     <React.Fragment>
       <Components.Container>
-        <Components.Slider/>
+        <Components.Slider isAdmin={false}/>
       </Components.Container>
     </React.Fragment>
   )

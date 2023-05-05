@@ -63,3 +63,9 @@ h1, h2, h3, h4, h5, h6 {
 .css-b62m3t-container {
   width: 545px !important;
 }
+
+.danger_toast {
+  background-color: rgb(138, 23, 23);
+  color: white;
+}
+

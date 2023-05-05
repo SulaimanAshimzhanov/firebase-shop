@@ -8,6 +8,7 @@ import { auth } from '../../../firebase/firebase';
 import { Providers } from '../../../providers';
 
 import cls from "./index.module.scss";
+import { AdminComponents } from '../../../components/admin';
 
 
 const Profile: React.FunctionComponent<any> = () => {
@@ -64,7 +65,7 @@ const Profile: React.FunctionComponent<any> = () => {
                 />
             </Components.Divider>
             <Components.Divider>
-                <button type='submit'>Edit Credentials</button>
+                <AdminComponents.AdminButton title="Edit profile"/>
             </Components.Divider>
         </form>
       </section>

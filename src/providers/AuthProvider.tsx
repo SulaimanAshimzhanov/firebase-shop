@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { onAuthStateChanged } from 'firebase/auth';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { AuthContext } from '../context/AuthContext';
 import { auth } from '../firebase/firebase';
 import { IUser } from '../types/types';
@@ -72,11 +72,12 @@ const AuthProvider: React.FunctionComponent<IAuthProvider> = (props: IAuthProvid
   }, []);
 
 
-  const signOut = React.useCallback(() => {
+  const logOut = React.useCallback(() => {
     localStorage.clear();
     setUser(null);
     setToken(undefined);
     setRender("Exit!");
+    signOut(auth);
     changeState("screen");
   }, [changeState]);
 
@@ -93,19 +94,21 @@ const AuthProvider: React.FunctionComponent<IAuthProvider> = (props: IAuthProvid
     token,
     user,
     setRender,
-    signOut,
+    logOut,
     state,
     setState,
-    changeState
+    changeState,
+    render
   }),
     [
       token,
       user,
       setRender,
-      signOut,
+      logOut,
       state,
       setState,
-      changeState
+      changeState,
+      render
     ]
   );
 

@@ -1,11 +1,13 @@
 
 
 import React from 'react';
-
-import cls from "./index.module.scss";
 import Routes from '../routes/Routes';
 import Admin from '../routes/Admin';
 import { Providers } from '../providers';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import cls from "./index.module.scss";
 
 const Screen: React.FunctionComponent<any> = () => {
   const { state, changeState } = Providers.useAuth();
@@ -38,6 +40,8 @@ const Screen: React.FunctionComponent<any> = () => {
       {state === "web" && <Routes/>}
 
       {state === "admin" && <Admin/>}
+
+      <ToastContainer/>
     </React.Fragment>
   )
 }
